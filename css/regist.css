@@ -1,0 +1,192 @@
+.regist
+{
+    z-index: 15;
+    width:1000px;
+    height:440px;
+    /* box-shadow: inset 3px -3px  12px rgb(239, 240, 240); */
+    /* background-color: rgb(37, 128, 209); */
+    display:block;
+    justify-content:center;
+    margin:auto;
+    margin-top:200px;
+    border-radius:20px;
+    position:relative;
+    /* background:rgba(255, 255, 255, 0.8) url("login.jpg") no-repeat; */
+    background: rgba(243, 243, 243, 0.162);
+    background-size: cover;
+    /* background-position:480px; */
+    backdrop-filter:blur(29px) ;
+    border: 1px solid rgba(255, 255, 255, 0.312);
+    box-shadow:inset 0 0 4px rgba(241, 243, 243, 0.761);
+
+}
+body
+{
+    /* background:url("images/aa.png") no-repeat center left; */
+    transition:1.5s all ease;
+  /* background-size:300%; */
+  background: linear-gradient(to right, rgba(170, 210, 181, 1), rgba(65, 187, 214, 1));    box-sizing: border-box;
+
+
+}
+/* body::before {
+    content: "";
+    position: fixed;  
+    inset: 0;         
+    background: inherit;  
+    filter: blur(20px);   
+    transform: scale(1.1);
+    z-index: -1;  
+} */
+.regist p
+{
+  /* position:absolute; */
+  font-size:40px;
+  font-family: 'Nunito', sans-serif;
+  margin-left:152px;
+  margin-top:65px;
+  color:rgb(58, 64, 61);
+  white-space: pre;
+}
+.regist button
+{
+  width:200px;
+  height:45px;
+  margin-left:130px;
+  border-radius:20px;
+  border:1px solid white;
+  backdrop-filter: blur(10px);
+  background-color: rgba(96, 224, 135, 0.875);     
+  color:white;
+  font-family: 'Nunito', sans-serif;
+  font-size:17px;
+  margin-top:10px;
+  box-shadow:inset 0 0 10px rgba(214, 237, 240, 0.151);
+  text-shadow: 0 0 1px rgb(255, 255, 255);
+
+
+}
+.regist hr
+{
+  transform:rotate(90deg);
+  width: 440px; 
+  border:1px solid rgba(248, 249, 249, 0.452);
+  margin-top:-87px;
+}
+.contentright
+{
+  position:absolute;
+  font-family: 'Nunito', sans-serif;
+  font-weight:lighter;
+  color:rgb(252, 244, 244);
+  font-size:30px;
+}
+.contentright input
+{
+  margin-top:16px;
+  margin-left:580px;
+  height:33px;
+  width:330px;
+  border-radius:10px;
+  border:1px solid #f3f1f12e;
+  margin-bottom:10px;
+  background-color:rgba(1,1,1,0.1);
+  box-shadow:inset 0px 2px 9px rgb(254, 254, 254);
+
+}
+.regist input::placeholder
+{
+  font-style:italic;
+}
+#btdangky:hover,#btdangnhap:hover
+{
+  cursor:pointer;
+
+}
+#btdangnhap {
+  position: relative; 
+  z-index: 10;
+}
+.contentright label
+{
+  position:absolute;
+  color:rgb(253, 252, 252);
+  left:590px;
+  top:-75px;
+  font-style:italic;
+  font-size:14px;
+  font-weight:bolder;
+  font-family: "Roboto", sans-serif;
+  transition:0.3s all ease;
+
+}
+
+.regist .contentright .input:focus
+{
+  outline: none;
+  border-color: #a29a9a;
+}
+#user:focus+label
+{
+  top:-102px;
+  border-radius:10px;
+  background: rgb(106, 227, 134);
+  padding: 4px;
+  color: #010000;}
+#pw:focus+label
+{
+  top: -46px !important;
+  border-radius:10px;
+    background: rgb(106, 227, 134);
+    padding: 4px;
+    color: #010000;
+}
+#cfpw:focus+label
+{
+  top: 22px !important;
+  border-radius:10px;
+    background: rgb(106, 227, 134);
+    padding: 4px;
+    color: #010000;
+}
+
+.abde
+{
+  box-sizing:border-box;
+  position:absolute;
+  /* display:flex; */
+  margin-left:400px;
+  background-color: rgba(225, 239, 246, 0.742);
+  z-index: 999;
+  width:234px;height:70px;padding:10px;border-radius:29px;margin-top:-330px;border:2px solid rgba(255, 255, 255, 0.593);
+  margin-left:-120px;
+  animation: 
+  abeee 4s infinite alternate, 
+  abn 4s alternate;
+  transition:all 1s ease;
+}
+@keyframes abeee
+{
+    0%{
+    transform:rotate(30deg);
+        /* transform:scale(1) ; */
+        /* transform:(40deg); */
+
+     }
+    100%
+    {
+        transform:rotate(-30deg);
+    }
+}
+@keyframes abn
+{
+    0%{
+        transform:translateY(-200px);
+        opacity:0.1;
+
+    }
+    100%
+    {
+        
+    }
+}

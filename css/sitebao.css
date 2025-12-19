@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GeorgeTown';
+    src: url("/font/GeorgeTown Display/TTF/GeorgeTown-Light.ttf") format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'iCiel Kermel';
+    src: url("/font/GeorgeTown Display/iCiel Kermel/iCiel Kermel.otf") format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'GeorgeTown';
+    src: url("/font/GeorgeTown Display/TTF/GeorgeTown-Medium.ttf") format('truetype');
+    font-weight: 700;
+}
+html, body {
+    height: 100%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(245, 232, 241);
+    font-family: Be Vietnam Pro;
+    color:#232323;
+    
+}
+
+.header 
+{
+    background-color: #ffffffdc;
+    position: fixed;
+    top:0;
+    left:0;
+    /* top: 1px; */
+    width: 100vw;
+    height: 71px;
+    /* border-radius: 60px; */
+
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    border:2px solid transparent;
+    box-shadow: 0 0 90px rgb(255, 255, 255);
+    
+}
+
+/* Logo */
+.header .logo {
+    top:3px;
+    width: 200px;
+    transform:translateY(3px);
+    height: 38px;
+    
+}
+
+/* Menu */
+.content ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+.content ul li a {
+    text-decoration: none;
+    color:#232323;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.content ul li
+{
+    /* box-shadow: 0 0 10px white; */
+    /* border:1px solid rgba(255, 255, 255, 0.425); */
+    padding:13px;
+    /* border-radius: 24px; */
+    background-color:rgba(255, 255, 255, 0);
+    /* backdrop-filter: blur(4px); */
+    
+}
+.content ul li a:hover {
+    color: #41BBD6;
+}
+
+.ticketcuatoi{
+    display:flex;
+    top:10px;
+}.ticketcuatoi img {
+    width: 50px;
+    height: 50px;
+    transform:translateY(14px);
+}
+.ticketcuatoi p
+{
+        font-size:1.2rem;
+}
+.displaybao{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-self:center;
+    gap:30px;
+    background-color: #fefefe;
+    width:50vw;
+    height:auto;
+    position: relative;
+    top:150px;
+    padding:30px;
+    border-radius: 30px;
+    
+}
+.img{
+    display:flex;
+    border-radius: 30px;
+    flex-direction: column;
+    height:600px;
+    justify-content: end;
+    background-color: #b4beab;
+    background:url(/images/ct1.png) no-repeat;
+    background-size:cover;
+
+
+}
+.img p{
+    color:rgba(0, 0, 0, 0.656);
+    font-size:56px;
+}
+.img span{
+    font-size:17px;
+    color:gray;
+    margin-bottom:40px;
+}
+.content1{
+    /* border:1px solid black; */
+}
+.content1 p{
+    color:black;
+    font-size:23px;
+    line-height:100px;
+}
+.nd{
+    padding:20px;
+    /* margin-left:30px; */
+     border-radius: 30px;
+    backdrop-filter: blur(30px);
+    background-color: transparent;
+}
+.footer
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    /* height:15vw; */
+    top:270px;
+    background:linear-gradient(to right,#97d6aa,#68b9cb,#84d3b0);
+}
+.content ul li a:hover {
+    background: linear-gradient(to right, #AAD2B5, #41BBD6);
+    border-radius: 30px;
+    padding:20px;
+    box-shadow: 0 0 20px gray;
+}

@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GeorgeTown';
+    src: url("/font/GeorgeTown Display/TTF/GeorgeTown-Light.ttf") format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'iCiel Kermel';
+    src: url("/font/GeorgeTown Display/iCiel Kermel/iCiel Kermel.otf") format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'GeorgeTown';
+    src: url("/font/GeorgeTown Display/TTF/GeorgeTown-Medium.ttf") format('truetype');
+    font-weight: 700;
+}
+html, body {
+    height: 100%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(245, 232, 241);
+    font-family: Be Vietnam Pro;
+    color:#232323;
+    
+}
+
+.header 
+{
+    background-color: #ffffffdc;
+    position: fixed;
+    top:0;
+    left:0;
+    /* top: 1px; */
+    width: 100vw;
+    height: 71px;
+    /* border-radius: 60px; */
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    border:2px solid transparent;
+    box-shadow: 0 0 90px rgb(255, 255, 255);
+}
+
+.header .logo {
+    top:3px;
+    width: 200px;
+    transform:translateY(3px);
+    height: 38px;
+}
+
+.content ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+.content ul li a {
+    text-decoration: none;
+    color:#232323;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.content ul li
+{
+    /* box-shadow: 0 0 10px white; */
+    /* border:1px solid rgba(255, 255, 255, 0.425); */
+    padding:13px;
+    /* border-radius: 24px; */
+    background-color:rgba(255, 255, 255, 0);
+    /* backdrop-filter: blur(4px); */
+}
+.content ul li a:hover {
+    color: #41BBD6;
+}
+
+.ticketcuatoi{
+    display:flex;
+    top:10px;
+}.ticketcuatoi img {
+    width: 50px;
+    height: 50px;
+    transform:translateY(14px);
+}
+.ticketcuatoi p
+{
+        font-size:1.2rem;
+}
+.finding
+{
+    margin-top:140px;
+    display:flex;
+    justify-content: center;
+    width:60vw;
+    justify-self: center;
+}
+.finding1 input{
+    width:60vw;
+    height:100px;
+    background-color: white;
+    box-shadow: 8px 6px 12px rgba(14, 14, 14, 0.377);
+    border-radius: 42px;
+    border:none;
+    
+
+}
+.finding1{
+    position:relative;
+
+    /* border:1px solid black; */
+}
+.finding1 input::placeholder{
+    font-size:24px;
+    color:rgb(122, 122, 112);
+}
+.finding1 img
+{
+    position:absolute;
+    top:33px;
+    left:95px;
+}
+.ketqua{
+    display:flex;
+    flex-direction: column;
+    width:60vw;
+    height:auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top:70px;
+    justify-self:center;
+    border-radius: 30px;
+    box-shadow: 0 0 90px rgb(225, 202, 202);
+    padding:20px;
+}
+.tieude
+{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    justify-items:center;
+    overflow: hidden;
+
+
+}
+.tieude1
+{
+    display:flex;
+    position:relative;
+    gap:15px;
+    top:20px;
+    right:50px;
+}
+.tieude1 button{
+    padding:4px;
+    border-radius: 20px;
+    width:100px;
+    height:40px;
+    border:1px solid rgb(200, 195, 195);
+    background-color: transparent;
+    transition:0.5s all ease;
+}
+.noidung{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.noidung1,.noidung2,.noidung3{
+    display:flex;
+    justify-content: flex-start;
+    /* border:1px solid rgba(128, 128, 128, 0.162); */
+    gap:20px;
+    margin-left:50px;
+    border-radius:10px;
+    background-color: rgba(246, 237, 243, 0.031);
+
+}
+.noidung img
+{ 
+    width:110px;
+    height:110px;
+    border-radius: 80px;
+}
+.noidung1title{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.noidung span
+{
+    color:gray;
+}
+.noidung p
+{
+    font-family: 'Montserrat', sans-serif;font-weight: 600;
+    font-size:26px;
+}
+.tieude1 button:hover
+{
+    color:white;
+    background:linear-gradient(to bottom,red,orange);
+    cursor:pointer;
+}
+.noidung1 :hover
+{
+    cursor: pointer;
+    background:linear-gradient(to bottom,rgb(255, 213, 221));
+    z-index: 1000;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(138, 135, 135, 0.41);
+    
+}
+.hoverr
+{
+    width:auto;
+    height: auto;
+}
+.hoverr :hover
+{
+    cursor: pointer;
+    background:linear-gradient(to bottom,rgb(255, 213, 221));
+    z-index: 1000;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(138, 135, 135, 0.41);
+}
+.content ul li a:hover {
+    background: linear-gradient(to right, #AAD2B5, #41BBD6);
+    border-radius: 30px;
+    padding:20px;
+    box-shadow: 0 0 20px gray;
+}
+

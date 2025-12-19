@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'GeorgeTown';
+    src: url("/font/GeorgeTown Display/TTF/GeorgeTown-Light.ttf") format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'iCiel Kermel';
+    src: url("/font/GeorgeTown Display/iCiel Kermel/iCiel Kermel.otf") format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'GeorgeTown';
+    src: url("/font/GeorgeTown Display/TTF/GeorgeTown-Medium.ttf") format('truetype');
+    font-weight: 700;
+}
+html, body {
+    height: 100%;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(251, 247, 250);
+    font-family: Be Vietnam Pro;
+    color:#232323;
+    
+}
+
+.header 
+{
+    background-color: #ffffffdc;
+    position: fixed;
+    top:0;
+    left:0;
+    /* top: 1px; */
+    width: 100vw;
+    height: 71px;
+    /* border-radius: 60px; */
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    border:2px solid transparent;
+    box-shadow: 0 0 90px rgb(255, 255, 255);
+}
+
+/* Logo */
+.header .logo {
+    top:3px;
+    width: 200px;
+    transform:translateY(3px);
+    height: 38px;
+}
+
+/* Menu */
+.content ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+.content ul li a {
+    text-decoration: none;
+    color:#232323;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.content ul li
+{
+    /* box-shadow: 0 0 10px white; */
+    /* border:1px solid rgba(255, 255, 255, 0.425); */
+    padding:13px;
+    /* border-radius: 24px; */
+    background-color:rgba(255, 255, 255, 0);
+    /* backdrop-filter: blur(4px); */
+}
+.content ul li a:hover {
+    color: #41BBD6;
+}
+
+.ticketcuatoi{
+    display:flex;
+    top:10px;
+}.ticketcuatoi img {
+    width: 50px;
+    height: 50px;
+    transform:translateY(14px);
+}
+.ticketcuatoi p
+{
+        font-size:1.2rem;
+}
+.intro{
+    position:relative;
+    width:60vw;
+    height:587px;
+    background-color: white;
+    justify-self: center;
+    margin-top:100px;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px gray;
+    border-radius: 40px;
+}
+.intro div{
+    /* border:1px solid black; */
+    position:absolute;
+}
+.poster{
+    justify-self: center;
+    margin-top:200px;
+    display:flex;
+    flex-direction: row;
+    width:60vw;
+    height:500px;
+    background-color: white;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: end;
+    background: url("/images/sukien1.png") no-repeat;
+    background-size:cover;
+
+}
+.intro p{
+    line-height: 1.5;
+}
+.poster1{
+    justify-self: center;
+    display:flex;
+    flex-direction: row;
+    width:60vw;
+    /* background-color: white; */
+    border-radius: 30px;
+    justify-content: space-between;
+    background-color:transparent;
+    backdrop-filter: blur(60px);
+    align-items: end;
+    padding:10px;
+}
+.noidung{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    width:45vw;
+    /* border:1px solid black; */
+    /* background-color: #837272; */
+    gap:20px;
+    padding:0 0 0 15px;
+}
+.noidung p
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color:white;
+    font-size:34px;
+    margin:0;
+}
+.ss{
+    display: flex;
+    align-items: center;
+    gap:4px;
+}
+.noidung span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:rgb(255, 255, 255);
+
+}
+.hangve
+{
+    display:flex;
+    flex-direction: column;
+    width:60vw;
+    height:700px;
+    /* background-color: white; */
+    justify-self: center;
+    justify-content:flex-start;
+    align-items: center;
+    /* align-items: center; */
+    /* background-color: rgb(214, 247, 247); */
+    gap:30px;
+}
+.hangveelement1
+{
+    display:flex;
+    justify-content: start;
+    width:50vw;
+    height:    calc(50vw*0.21); 
+       justify-self: center;
+
+    justify-self: center;
+    margin-top:10px;
+    gap:70px;
+    /* background-color: red; */
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(135, 130, 130, 0.611);
+    align-items: center;
+
+}
+.detailve
+{   
+    /* display:flex;
+    flex-direction: column; */
+    /* border:7px solid rgb(2, 0, 0); */
+    /* margin-top:-40px; */
+
+    
+}
+/* .hangve{
+    width:3000px;
+} */
+.hangveelement1 img{
+   
+    margin-left:0px;
+    width:440px;
+    height: 240px;
+    margin-left:30px;
+
+}
+.hangveelement1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:29px;
+    font-weight:bolder;
+    text-align: center;
+    line-height: 4px;
+
+}
+.hangveelement1 span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    display:block;
+    line-height: 32px;
+    /* background-color: black; */
+}
+.soluong
+{
+    display:flex;
+    width:100px;
+    align-items: center;
+    height:40px;
+    border:1px solid rgba(180, 169, 169, 0.655);
+
+}
+.quantity input{
+    width:60px;
+    height:40px;
+    border:1px solid rgba(180, 169, 169, 0.655)
+}
+.soluong button{
+    border:none;
+}
+.increase button
+{
+    width:20px;
+    background-color: transparent;
+}
+.minus button
+{
+    width:20px;
+    background-color: transparent;
+}
+.soluong0
+{
+    display:flex;
+    flex-direction: column;
+
+}
+.soluong0 p{
+    font-size:20px;
+}
+#order
+{
+        width:270px;
+        height:90px;
+        font-size:40px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+        border-radius: 40px;
+        background-color: rgba(231, 149, 163, 0.982);
+        color:white;
+        border:none;
+        padding:20px;
+        margin-top:40px;
+        box-shadow:inset 0 0 19px rgb(255, 255, 255);
+
+}
+#order:hover{
+    cursor: pointer;
+}
+.soluong0 button:hover{
+    cursor:pointer;
+}
+#buy:hover{
+    cursor: pointer;
+}
+.footer
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    /* height:15vw; */
+    top:270px;
+    background:linear-gradient(to right,#97d6aa,#68b9cb,#84d3b0);
+}
+.content ul li a:hover {
+    background: linear-gradient(to right, #AAD2B5, #41BBD6);
+    border-radius: 30px;
+    padding:20px;
+    box-shadow: 0 0 20px gray;
+    color:black;
+}
+.footer
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    /* height:15vw; */
+    top:270px;
+    background:linear-gradient(to right,#97d6aa,#68b9cb,#84d3b0);
+    margin-bottom:10px;
+}

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+  }
+  
+  .concert-section {
+    width: 73vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.141);
+    padding:20px 0 30px 90px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px gray;
+
+  }
+  
+  .concert-title {
+    text-align: center;
+    font-size: 98px;
+    font-weight: 900;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    background: linear-gradient(to right,#AAD2B5,#AAD2B5,#41BBD6,#EFCDC5);
+    color:transparent;
+    background-clip: text;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+
+  }
+  
+  .concert-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: 2;
+    gap: 64px;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .card p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  .card{
+    z-index: 20;
+    position: relative;
+    background-color: #edf3f4;
+    box-shadow: 10px 10px 20px gray;
+
+
+  }
+  
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .concert-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .concert-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .concert-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .card{cursor: pointer;  overflow: hidden;padding:25px;
+  }
+
+
+  .card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.572),
+        transparent
+    );
+    transform: skewX(-35deg);
+    filter: blur(9px);
+    z-index: 9;
+    pointer-events: none;
+    opacity: 1;
+
+  }
+
+
+
+  @keyframes kinhdo{
+    from { left: -50%; }
+    to   { left: 290%; }
+  }
+  .card:hover::before{
+    animation: kinhdo 2s ease;
+  }
+  .footer1
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    /* height:15vw; */
+    top:270px;
+    background-color:#d0cac8 !important;
+    padding:20px;
+}
+.content ul li a:hover {
+    background: linear-gradient(to right, #AAD2B5, #41BBD6);
+    border-radius: 30px;
+    padding:20px;
+    box-shadow: 0 0 20px gray;
+}

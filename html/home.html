@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=iCiel+Kermel&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/home.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/sitegioithieu.css">
+<script async src="https://cse.google.com/cse.js?cx=715961b4e61044972">
+</script>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <div class="popup">
+        <img src="/images/x.png" style="width:60px;height:60px;left:400px;    z-index: 11112;" id="cancel">
+            <img src="/images/popup.png">
+
+
+    </div>
+    <div class="setting0">
+        <div class="container">
+            <!-- <h1 class="title">Settings</h1>
+        
+            <h2 class="section-title">Account</h2> -->
+        
+            <div class="card">
+                <div class="item">
+                    <img src="/images/aa1.png" style="width:30px">
+                    <span class="text"id="logout1">Edit Profile</span>
+                </div>
+        
+                <div class="item">
+                    <img src="/images/aa2.png" style="width:30px">
+                    <span class="text"id="logout2">CMS</span>
+                </div>
+        
+                <div class="item">
+                    <img src="/images/aa4.png" style="width:30px">
+                    <span class="text"id="logout3">Vé đã mua</span>
+                </div>
+        
+                <div class="item logout">
+                    <img src="/images/aa3.png" style="width:30px">
+                    <span class="text" id="logout4">Đăng Xuất</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="faded"></div>
+    <div id="fadedtimkiem"></div>
+    <div class="timkiemm">
+        <p style="margin-left:3%;margin-top:-700px;font-size:50px;">🔍</p>
+        <p style="margin-left:23%;font-size:70px;">🔍</p>
+        <p style="margin-left:53%;margin-top:-200px;font-size:40px;">🔍</p>
+        <p style="margin-left:73%;font-size:90px;">🔍</p>
+        <p style="margin-left:93%;margin-top:-200px;font-size:80px;">🔍</p>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<header class="header">
+    <img src="/images/lg.png" alt="Logo" class="logo">
+    <nav class="content">
+        <ul>
+            <li><a href="/html/home.html">Trang chủ</a></li>
+            <li><a id="gioithieu" href="#">Giới thiệu</a></li>
+            <li><a href="/html/sitetintuc.html">Tin Tức</a></li>
+            <li><a href="/html/sitesukien.html">Sự Kiện</a></li>
+        </ul>
+    </nav>
+
+    <div class="ticketcuatoi">
+        <!-- <img src="/images/Bag.png" alt="Ticket">
+        <p style="white-space: pre;"> Vé của tôi   </p> -->
+        <img src="/images/Profile.png" alt="Ticket" height="12" class="logout1">
+        <p style="white-space: pre;" class="logout1" id="lggg">   Username   </p>
+
+
+    </div>
+
+
+</header>
+<div class="modal-overlay" id="gioithieu1">
+    <div class="modal-card">
+        <button class="close-btn">&times;</button>
+
+        <div class="icon-container">
+            <div class="icon-circle">
+                <span class="ticket-icon">
+                    <img src="/images/lg.png" style="width:300px;">
+                </span>
+            </div>
+            <div class="sparkle">✨</div>
+        </div>
+
+        <h2 class="modal-title">Câu chuyện của <span class="brand-text">MyTicket</span></h2>
+        <div class="title-underline"></div>
+
+        <p class="modal-description">
+            Chúng tôi tin rằng mỗi sự kiện không chỉ đơn thuần là một buổi biểu diễn hay chương trình học thuật, mà là một hành trình cảm xúc đầy ý nghĩa. MyTicket ra đời với sứ mệnh kết nối bạn với những khoảnh khắc âm nhạc và tri thức đáng nhớ, thông qua trải nghiệm đặt vé đơn giản, tiện lợi, an toàn và đáng tin cậy, giúp bạn trọn vẹn tận hưởng từng khoảnh khắc của sự kiện.
+        </p>
+
+        <button id="btt" class="primary-btn">
+            Tìm hiểu thêm <span class="arrow">→</span>
+        </button>
+        
+        
+    </div>
+</div>
+<div class="banner">
+    <div class="poster1">
+        <img src="/images/img2.png">
+        <span id="p6">Top #2</span>
+            <span style="border:none;font-size: 90px;padding:0" id="p7">KẺ CẮP GẶP BÀ GIÀ</span>
+            <span style="border:none;font-size: 30px;padding:0" id="p11">Hoàng Thuỳ Linh</span>
+
+            <div class="luotinterest" id="p8">
+                <img src="/images/fv.png" id="p9">
+                <p style="white-space:pre" id="p10">   0 Đang quan tâm</p>
+       
+    </div>
+    </div>
+        <div class="poster2">
+            <img src="/images/img4.png" >
+            <span id="p1">Top #1 Concert</span>
+            <span style="top:36%;border:none;font-size: 90px;padding:0" id="p2">SKY TOUR</span>
+            <div class="luotinterest" id="p3">
+                <img src="/images/fv.png" id="p4">
+                <p id="p5">0 Đang quan tâm</p>
+            </div>
+        </div>
+        <div class="poster3">
+            <img src="/images/img3.png">
+            <span id="p12">Top #3</span>
+            <span style="border:none;font-size: 90px;padding:0" id="p13">EM XINH</span>
+        
+            <div class="luotinterest" id="p15">
+                <img src="/images/fv.png" id="p16">
+                <p style="white-space:pre" id="p17">   0 Đang quan tâm</p>
+            </div> 
+        
+        </div> 
+</div>
+<div class="ytb">
+    <div class="vid1" >
+        <iframe style="width:43vw;height:calc(43vw*0.56);" 
+        id="vid3"
+    src="https://www.youtube.com/embed/sIGBBl9kY-M?enablejsapi=1"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+    </div>
+    <div class="vid4">
+        <iframe style="width:43vw;height:calc(43vw*0.56); border-radius: 30px;"
+    id="vid2"
+    src="https://www.youtube.com/embed/mEGfu3j5e0M?enablejsapi=1"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+    </div>
+</div>
+<div class="finding">
+    <div class="finding1" id="timkiem1">
+        <!-- <p id="plain1">🔍</p> -->
+        <div class="logotimkiem"></div>
+        <input type="text" placeholder="             🔍   Tìm kiếm Nghệ sỹ / Sự kiện" id="timkiem">
+    </div>
+</div>
+<div class="event">
+    <p style="position:absolute;top:-3px;left:44px;font-size:23px;font-weight:bold">
+        Sự kiện đặc biệt  🔥
+    </p>
+    <p id="xemall" style="position:absolute;top:-3px;right:44px;font-size:21px;color:rgb(111, 117, 117);">
+Xem tất cả >    </p>
+    
+    <div class="event1" id="event1" >
+        <div class="popup1">
+            <p style="color:rgb(50, 49, 48);font-size:20px;line-height: 2;">Với sự tham gia của các diễn viên:BB Trần, Hải Triều, Ngọc Phước, Bé 7, Tuấn Kiệt, Long Chun, Thắng Tăng, Mai Bảo Vinh, Huỳnh Nhựt, Giỏi Lê, Dương Quốc Mỹ, Ngọc Tâm, Nhã Uyên và các diễn viên của Nhà Hát Thanh Niên.</p>
+        </div>
+        <img src="/images/ev1.png" >
+        <p style="font-weight: bold;">Đảo Hoa Hậu</p>
+        <p>Hài kịch</p>
+
+
+    </div>
+    <div class="event2">
+        <div class="popup1">
+            <p style="color:rgb(50, 49, 48);font-size:20px;line-height: 2;">Truyện là một truyền thuyết dân gian Việt Nam giải thích hiện tượng lũ lụt, ca ngợi sức mạnh chế ngự thiên tai và công lao dựng nước của người Việt cổ, thể hiện ước vọng hòa hợp với tự nhiên, đoàn kết chống giặc</p>
+        </div>
+        <img src="/images/ev2.png">
+        <p style="font-weight: bold;">Sơn Tinh Thuỷ Tinh</p>
+        <p>Vở kịch rối</p>
+
+    </div>
+    <div class="event3">
+        <div class="popup1">
+            <p style="color:rgb(50, 49, 48);font-size:20px;line-height: 2;">Diễn viên: Huỳnh Nhựt, Hải Triều, Tuấn Kiệt, Mai Bảo Vinh, Long Chun, Bé 7, Giỏi Lee, Duy Tiến, Huỳnh Thi, Huyền Duy, Lê Nghĩa và Khương Ngọc.</p>
+        </div>
+        <img src="/images/ev3.png">
+        <p style="font-weight: bold;">Tung Hoành Pattaya</p>
+        <p>Hài kịch</p>
+
+    </div>
+    <div class="event4">
+        <div class="popup1">
+            <p style="color:rgb(50, 49, 48);font-size:20px;line-height: 2;">Dự án được lấy cảm hứng từ tiểu thuyết “Sans Famille” (Không Gia Đình) của nhà văn Pháp Hector Malot – câu chuyện về cậu bé Rémi trên hành trình đi tìm gia đình, tình thương và niềm tin vào con người. </p>
+        </div>
+        <img src="/images/ev4.png">
+        <p style="font-weight: bold;">Lễ Hội Tuyết Trắng</p>
+        <p>Nhạc kịch</p>
+
+    </div>
+    <div class="event5">
+        <div class="popup1">
+            <p style="color:rgb(50, 49, 48);font-size:20px;line-height: 2;">Khởi động hơn 10 năm trước, ONE PIECE Music Symphony là buổi hòa nhạc One Piece chính thức duy nhất, với âm nhạc được phối khí và giám tuyển trực tiếp cùng nhà soạn nhạc nguyên tác Kohei Tanaka, và được cấp phép bởi TOEI ANIMATION.
+
+            </p>
+        </div>
+        <img src="/images/ev5.png">
+        <p style="font-weight: bold;">One Piece</p>
+        <p>Nhạc giao hưởng</p>
+
+    </div>
+
+</div>
+<div class="mechandise">
+    <p class="aaaa" style="position:absolute;right:50px;color:gray;top:20px;">Tìm hiểu thêm ></p>
+    <div class="ct">
+        <p>Mechandise ON TOP! 🔥</p>
+        <p style="font-size:17px;color:gray;font-weight:200">Những vật phẩm được các bạn trẻ săn đón nhất</p>
+    </div>
+    <div class="pk">
+        <div class="pk1">
+            <div><img src="/images/pk1.png"></div>
+            <div style="width:500px;margin-left:19px;">
+                <p>G-DRAGON Lightsticks</p>
+            </div>
+            <div >
+                <button class="buy">BUY</button>
+            </div>
+        </div>
+        <div class="pk2">
+            <div><img src="/images/pk2.png"></div>
+            <div style="width:500px;margin-left:19px;">
+                <p>BlackPink Lightsticks</p>
+            </div>
+            <div >
+                <button class="buy">BUY</button>
+            </div>
+        </div>
+        <div class="pk3">
+            <div><img src="/images/pk3.png"></div>
+            <div style="width:500px;margin-left:19px;">
+                <p>Billies Ellish Hoodie</p>
+            </div>
+            <div >
+                <button class="buy">BUY</button>
+            </div>
+        </div>
+        <div class="pk4">
+            <div><img src="/images/pk4.png"></div>
+            <div style="width:500px;margin-left:19px;">
+                <p>Mỹ Tâm Lightsticks</p>
+            </div>
+            <div >
+                <button class="buy">BUY</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="santa" id="santa">
+    <img src="/images/st1.png" style="position:absolute;top:0px;left:0px" id="imgsanta">
+    <div class="st1">
+        <div>
+            <p>CHƯƠNG TRÌNH
+IDOL SANTA 2025
+</p>
+<p style="color:rgb(0, 0, 0);font-size:1rem;font-weight:400;text-align: center;">Áp dụng từ ngày 10/12-25/12</p>
+<br><button class="buy">Săn vé ngay</button>
+        </div>
+        <div></div>
+    </div>
+    <div class="st2">
+        <p style="white-space: pre;font-style:italic;">GIẢM TỚI 
+<span style="font-size:5rem">30%</span>
+        </p>
+
+    </div>
+    <div class="st3">
+        <img src="/images/st2.png">
+    </div>
+
+</div>
+<div class="sdr">
+    <p class="fill">Sắp diễn ra</p>
+    <p class="sdrlayout">Sắp diễn ra</p>
+    <p class="sdrlayout2">Sắp diễn ra</p>
+    <p class="sdrlayout3">Sắp diễn ra</p>
+
+    <div class="sdrimg">
+    <img src="/images/sdr1.png" style="width:60vw;    border:10px solid white;border-radius:140px;" id="sukien">
+    </div>
+</div>
+<div class="tintuc">
+    <div class="wrapmain" id="tta">
+        <div class="tintichd">
+        <div class="wrap">
+              <p class="ly1">Tin Tức</p>
+              <p class="chuthat">Tin Tức</p>
+        </div>
+    </div>
+    </div>
+    <div class="tintucct">
+        <div class="ct1" data-id="ct1">
+            <div>
+            <img src="/images/ct1.png" style="width:14vw;">
+        </div>
+        <div style="padding:13px;">
+            <p style="color: gray;;margin-top:6px;">3 ngày trước</p>
+            <p style="font-family: 'GeorgeTown';font-weight:700;margin-top:0px;">Hoà Minzy phản hồi về chuyện lên xe hoa</p>
+            <p style="color: gray;margin-top:0px;">Sau khi chia tay với bạn trai thiếu gia, Hoà Minzy vẫn chưa công khai mối quan hệ mới</p>
+        </div>
+        </div>
+        <div class="ct1"  data-id="ct2">
+            <div>
+            <img src="/images/ct2.png" style="width:14vw;">
+        </div>
+        <div style="padding:13px;">
+            <p style="color: gray;;margin-top:6px;">2 ngày trước</p>
+            <p style="font-family: 'GeorgeTown';font-weight:700;margin-top:0px;">Lo cho Hương Giang</p>
+            <p style="color: gray;margin-top:0px;">Không thể phủ nhận Hương Giang đã làm nên điều đặc biệt cho nhan sắc Việt ở Miss Universe,......</p>
+        </div>
+        </div>
+        <div class="ct1" data-id="ct3">
+            <div>
+            <img src="/images/ct3.png" style="width:14vw;">
+        </div>
+        <div style="padding:13px;">
+            <p style="color: gray;;margin-top:6px;">3 ngày trước</p>
+            <p style="font-family: 'GeorgeTown';font-weight:700;margin-top:0px;">Hani (EXID) sexy "xịt máu" đốt cháy sân khấu WATERBOMB, xứng danh "nữ thần fancam" đích thực!</p>
+            <p style="color: gray;margin-top:0px;">Fancam của Hani (EXID) luôn là huyền thoại trong giới Kpop, và </p>
+        </div>
+        </div>
+        <div class="ct1" data-id="ct4">
+            <div>
+            <img src="/images/ct4.webp" style="width:14vw;">
+        </div>
+        <div style="padding:13px;">
+            <p style="color: gray;;margin-top:6px;">3 ngày trước</p>
+            <p style="font-family: 'GeorgeTown';font-weight:700;margin-top:0px;">Tôi 'cắt sóng' KOL lệch chuẩn, nghệ sĩ ngáo quyền lực</p>
+            <p style="color: gray;margin-top:0px;">Công chúng không thể 'nhắm mắt làm ngơ' sai phạm của người nổi tiếng chỉ vì họ có fan đông, livestream triệu view, từng...... </p>
+        </div>
+        </div>        <div class="ct1" data-id="ct5">
+            <div>
+            <img src="/images/ct5.webp" style="width:14vw;">
+        </div>
+        <div style="padding:13px;">
+            <p style="color: gray;margin-top:6px;">2 ngày trước</p>
+            <p style="font-family: 'GeorgeTown';font-weight:700;margin-top:0px;">Thử thách cho Sơn Tùng M-TP hát tiếng Anh</p>
+            <p style="color: gray;margin-top:0px;">Chê Sơn Tùng M-TP hát tiếng Anh nhưng liệu khán giả nước ngoài có dễ đón nhận những sản phẩm 'đặc sệt' chất Việt Nam......</p>
+        </div>
+        </div>        
+
+
+    </div>
+</div>
+<div class="footer">
+    <img src="/images/ft.png" style="width:162px;height:31px;">
+    <p style="color:white;font-size:22px;font-weight:200;">Your fandom universe, all in one place</p>
+    <p style="color:white;font-size:20px;font-weight:200;">Chính sách bảo mật</p>
+    <div style="display: flex;gap:20px;margin-top: 20px;cursor: pointer;">
+        <img src="/images/w0.png" style="width: 39px;">
+        <img src="/images/w2.png" style="width: 39px;">
+        <img src="/images/w3.png" style="width: 39px;">
+        <img src="/images/w1.png" style="width: 39px;">
+
+    </div>
+
+</div>
+
+<script src="/js/home.js">
+</script>
+<script src="/js/cms.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+</body>
+</html>

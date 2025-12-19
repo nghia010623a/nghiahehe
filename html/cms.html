@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trang CMS Quản lý Nội dung</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link rel="stylesheet" href="/css/cms.css">
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#4299f0",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .glassmorphism {
+        background: rgba(16, 25, 34, 0.5); 
+        backdrop-filter: blur(12px); 
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(66, 153, 240, 0.2); 
+      }
+      .form-input-glass {
+        background: rgba(25, 38, 51, 0.6);
+        border: 1px solid #324d67;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        transition: border-color 0.2s ease-in-out;
+      }
+      .form-input-glass:focus {
+        border-color: #4299f0;
+        outline: none;
+        box-shadow: none;
+      }
+      .btn-glass {
+        background: rgba(66, 153, 240, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(66, 153, 240, 0.4);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+      .btn-glass:hover {
+        background: rgba(66, 153, 240, 0.3);
+        border-color: rgba(66, 153, 240, 0.6);
+      }
+    </style>
+</head>
+<body class="font-display text-black">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<div class="relative min-h-screen w-full overflow-x-hidden">
+<div class="absolute top-0 left-0 w-96 h-96 bg-primary/20 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-[#805ad5]/20 rounded-full filter blur-3xl opacity-30 animate-pulse delay-1000"></div>
+<div class="relative flex min-h-screen">
+<nav class="w-64 flex-shrink-0 p-4">
+<div class="glassmorphism flex h-full flex-col justify-between rounded-xl p-4" >
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Avatar of the administrator" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2gBVRz_FqndKAOeyR2MuLaY20zNPYHpDz43lQtlGdq2MtH4CR08nT5ZMSe0q-JEx6UhOcprIosJSQFCAdHrwwouS8OtXmpjEDpb5ck69kvrfT0bQ2z5s_P3v6Vcw8AR9N0_CguaTDZaFFq_2_uWtzHdvW6o6TTbKreiN4kHnFgT98CwMW3VYx-UASnVI0r-CSxbUqhyc7FDFH1F-6N7v38W9sP4OyNqNyH4__QP8jFdsY80Xh1cYMSP3xt_xkGOSCRMlOpRfOYVg");'></div>
+<div class="flex flex-col">
+<h1 class="text-white text-base font-medium leading-normal">Admin Name</h1>
+<p class="text-[#92adc9] text-sm font-normal leading-normal">Administrator</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/30" href="#">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24">dashboard</span>
+<p class="text-primary text-sm font-medium leading-normal">Bảng điều khiển</p>
+</a>
+</div>
+</div>
+<div class="flex flex-col">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors" href="#">
+<span class="material-symbols-outlined text-white/80">logout</span>
+<p class="text-white text-sm font-medium leading-normal" id="back">Trở về Trang chủ</p>
+</a>
+</div>
+</div>
+</nav>
+<main class="flex-1 p-8">
+<div class="flex flex-col gap-8">
+<header>
+<p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Quản lý Nội dung</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+<div class="glassmorphism flex flex-col gap-6 rounded-xl p-6">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Thêm Tin tức</h2>
+<form class="flex flex-col gap-4">
+<label class="flex flex-col">
+<p class="text-white text-base font-medium leading-normal pb-2">Tiêu đề bài viết</p>
+<input class="form-input-glass w-full rounded-lg h-12 placeholder:text-[#92adc9] px-4 text-base font-normal" placeholder="Nhập tiêu đề bài viết" type="text" id="tieude"/>
+</label>
+<label class="flex flex-col">
+    <p class="text-white text-base font-medium leading-normal pb-2">Phụ đề bài viết</p>
+    <input class="form-input-glass w-full rounded-lg h-12 placeholder:text-[#92adc9] px-4 text-base font-normal" placeholder="Nhập phụ đề bài viết" type="text" id="phude"/>
+    </label>
+<label class="flex flex-col">
+<p class="text-white text-base font-medium leading-normal pb-2">Nội dung bài viết</p>
+<textarea class="form-input-glass w-full rounded-lg min-h-52 placeholder:text-[#92adc9] p-4 text-base font-normal resize-none" placeholder="Nhập nội dung bài viết" id="noidungbaiviet"></textarea>
+</label>
+<label class="flex flex-col">
+    <p class="text-white text-base font-medium leading-normal pb-2">Tác giả</p>
+    <input class="form-input-glass w-full rounded-lg h-12 placeholder:text-[#92adc9] px-4 text-base font-normal" placeholder="Nhập tên tác giả" type="text" id="tacgia"/>
+    </label>
+    <label class="flex flex-col">
+        <p class="text-white text-base font-medium leading-normal pb-2">KeyWord bài viết</p>
+        <input class="form-input-glass w-full rounded-lg h-12 placeholder:text-[#92adc9] px-4 text-base font-normal" placeholder="Nhập KeyWord bài viết" type="text" id="keyword"/>
+        </label>
+<div class="flex flex-col">
+<p class="text-white text-base font-medium leading-normal pb-2">Ảnh minh họa</p>
+<div class="form-input-glass flex flex-col items-center justify-center w-full rounded-lg border-2 border-dashed border-[#324d67] p-6 text-center cursor-pointer hover:border-primary transition-colors" id="chonfile">
+<span class="material-symbols-outlined text-primary text-4xl">add_photo_alternate</span>
+<p class="text-sm text-white mt-2">Kéo và thả ảnh vào đây, hoặc <span class="font-semibold text-primary">nhấn để chọn</span></p>
+<input type="file" id="file" hidden>
+<p class="text-xs text-[#92adc9] mt-1">PNG, JPG, GIF up to 10MB</p>
+</div>
+</div>
+<button class="btn-glass flex items-center justify-center gap-2 w-full h-12 rounded-lg text-white font-semibold mt-2" type="button" id="dangtintuc">
+<span class="material-symbols-outlined">publish</span>
+<span>Đăng Tin tức</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+<script src="/js/cms.js"></script>
+</body></html>

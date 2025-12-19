@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header Demo</title>
+        <link href="https://fonts.googleapis.com/css2?family=iCiel+Kermel&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/sitethanhtoan.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+
+        <header class="header">
+            <img src="/images/lg.png" alt="Logo" class="logo">
+            <nav class="content">
+                <ul>
+                    <li><a href="/html/home.html">Trang chủ</a></li>
+                    <li><a href="/html/sitegioithieu.html">Giới thiệu</a></li>
+                <li><a href="/html/sitetintuc.html">Tin Tức</a></li>
+                <li><a href="/html/sitesukien.html">Sự Kiện</a></li>
+                </ul>
+            </nav>
+        
+            <div class="ticketcuatoi">
+                <!-- <img src="/images/Bag.png" alt="Ticket">
+                <p style="white-space: pre;"> Vé của tôi   </p> -->
+                <img src="/images/Profile.png" alt="Ticket" height="12" id="logout">
+                <p style="white-space: pre;"id="lggg">   Username   </p>
+        
+        
+            </div>
+        </header>
+        <div class="popuptt0">
+        <div class="popuptt">
+            <img src="/images/lg.png">
+            <div id="qrcode"></div>
+
+            <style>
+            #qrcode {
+              width: 200px;
+              height: 200px;
+            }
+            
+            #qrcode img,
+            #qrcode canvas {
+              width: 100% !important;
+              height: 100% !important;
+            }
+            </style>      <br>      <button id="back">Quay lại</button>
+        </div>
+    </div>
+
+        <div class="all">
+            <div class="hangve">
+                <p style="line-height: 60px;font-size:50px;font-weight: 600;">Chọn vé</p>
+                <div class="hangveelement1">
+                    <div class="left">
+                        <p style="white-space: pre;width:440px">Regular ticket
+                        
+            
+            
+            
+            
+            
+            
+                            <span>500.000K</span></p>
+                             <div class="soluong0">
+                    <div class="soluong">
+                        <div class="minus">
+                            <button id="minusregular">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number"value="0" min="0" max="10" id="quantityregular">
+                        </div>
+                        <div class="increase">
+                            <button id="increaseregular">+</button>
+                        </div>
+                
+                
+                    </div>
+                </div>
+                            
+                    </div>
+                    
+                    <div class="detailve">
+                        <p>Regular Ticket</p>
+                        <span>Mỗi đơn hàng được mua tối đa 10 vé.</span>
+                        <span>Vé hạng đứng Miracle Zone, không phân chia khu vực.</span>
+                        <span>Check-in sớm sẽ được ưu tiên vị trí đẹp.</span>
+                        <span>Quà tặng: Sticker Pack, Vé giấy, Phong bì lưu niệm.</span>
+                        <span>Hỗ trợ LED Livecam theo dõi sự kiện.</span>
+                    </div>
+                    <!-- <div class="soluong0">
+                        <p>Số lượng</p>
+                    <div class="soluong">
+                        <div class="minus">
+                            <button id="minusregular">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number"value="0" min="0" max="10" id="quantityregular">
+                        </div>
+                        <div class="increase">
+                            <button id="increaseregular">+</button>
+                        </div>
+                
+                
+                    </div>
+                </div> -->
+                </div>
+                <div class="hangveelement1">
+                    <div class="left">
+                        <p style="white-space: pre;width:440px">Premium Ticket
+                        
+            
+            
+            
+            
+            
+            
+                            <span>1.000.000K</span></p>
+                             <div class="soluong0">
+                    <div class="soluong">
+                        <div class="minus">
+                            <button id="minuspremium">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number"value="0" min="0" max="10" id="quantitypremium">
+                        </div>
+                        <div class="increase">
+                            <button id="increasepremium">+</button>
+                        </div>
+                
+                
+                    </div>
+                </div>
+                            
+                    </div>                    <div class="detailve">
+                        <p>Premium Ticket</p>
+                        <span>Mỗi đơn hàng được mua tối đa 10 vé.</span>
+                        <span>Vé ngồi, tặng card bo góc</span>
+                        <span>Check-in sớm sẽ được ưu tiên vị trí đẹp.</span>
+                        <span>Quà tặng: Sticker Pack, Vé giấy, Phong bì lưu niệm.</span>
+                        <span>Hỗ trợ LED Livecam theo dõi sự kiện.</span>
+                    </div>
+                    <!-- <div class="soluong">
+                        <div class="minus">
+                            <button id="minuspremium">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number" value="0" min="0" max="10" id="quantitypremium">
+                        </div>
+                        <div class="increase">
+                            <button id="increasepremium">+</button>
+                        </div>
+                    </div> -->
+                    
+                </div>
+                <div class="hangveelement1">
+                    <div class="left">
+                        <p style="white-space: pre;width:440px">Vip Ticket
+                        
+            
+            
+            
+            
+            
+            
+                            <span>1.600.000K</span></p>
+                             <div class="soluong0">
+                    <div class="soluong">
+                        <div class="minus">
+                            <button id="minusvip">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number"value="0" min="0" max="10" id="quantityvip">
+                        </div>
+                        <div class="increase">
+                            <button id="increasevip">+</button>
+                        </div>
+                
+                
+                    </div>
+                </div>
+                            
+                    </div>                    <div class="detailve">
+                        <p>VIP Ticket</p>
+                        <span>Mỗi đơn hàng được mua tối đa 05 vé.</span>
+                        <span>Vé ngồi, tặng card bo góc</span>
+                        <span>Check-in sớm sẽ được ưu tiên vị trí đẹp.</span>
+                        <span>Quà tặng: Sticker Pack, Vé giấy, Phong bì lưu niệm.</span>
+                        <span>Hỗ trợ LED Livecam theo dõi sự kiện.</span>
+                    </div>
+                    <!-- <div class="soluong">
+                        <div class="minus">
+                            <button id="minusvip">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number" value="0" min="0" max="5" id="quantityvip">
+                        </div>
+                        <div class="increase">
+                            <button id="increasevip">+</button>
+                        </div>
+                    </div> -->
+                    
+                </div>
+                <div class="hangveelement1">
+                    <div class="left">
+                        <p style="white-space: pre;width:440px">S-Vip Ticket
+                        
+            
+            
+            
+            
+            
+            
+                            <span>2.600.000K</span></p>
+                             <div class="soluong0">
+                    <div class="soluong">
+                        <div class="minus">
+                            <button id="minussvip">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number"value="0" min="0" max="10" id="quantitysvip">
+                        </div>
+                        <div class="increase">
+                            <button id="increasesvip">+</button>
+                        </div>
+                
+                
+                    </div>
+                </div>
+                            
+                    </div>                    <div class="detailve">
+                        <p>S-Vip Ticket</p>
+                        <span>Mỗi đơn hàng được mua tối đa 10 vé.</span>
+                        <span>Vé ngồi, tặng card bo góc</span>
+                        <span>Check-in sớm sẽ được ưu tiên vị trí đẹp.</span>
+                        <span>Quà tặng: Sticker Pack, Vé giấy, Phong bì lưu niệm.</span>
+                        <span>Hỗ trợ LED Livecam theo dõi sự kiện.</span>
+                        <span>Có xe đưa đón</span>
+                    </div>
+                    <!-- <div class="soluong">
+                        <button id="minussvip">-</button>
+                        <input type="number" id="quantitysvip" value="0" min="0" max="10">
+                        <button id="increasesvip">+</button>
+                    </div> -->
+                </div>
+                <!-- <div class="hangveelement1">
+                    <div class="left">
+                        <p style="white-space: pre;width:440px">Regular ticket
+                        
+            
+            
+            
+            
+            
+            
+                            <span>500.000K</span></p>
+                             <div class="soluong0">
+                    <div class="soluong">
+                        <div class="minus">
+                            <button id="minusregular">-</button>
+                        </div>
+                        <div class="quantity">
+                            <input type="number"value="0" min="0" max="10" id="quantityregular">
+                        </div>
+                        <div class="increase">
+                            <button id="increaseregular">+</button>
+                        </div>
+                
+                
+                    </div>
+                </div>
+                            
+                    </div>                    <div class="detailve">
+                        <p>Sky-Lounge Ticket</p>
+                        <span>Mỗi đơn hàng được mua tối đa 02 vé.</span>
+                        <span>Vé ngồi, tặng card bo góc</span>
+                        <span>Check-in sớm sẽ được ưu tiên vị trí đẹp.</span>
+                        <span>Quà tặng: Sticker Pack, Vé giấy, Phong bì lưu niệm.</span>
+                        <span>Hỗ trợ LED Livecam theo dõi sự kiện.</span>
+                        <span>Có xe đưa đón</span>
+                        <span>Có đầu bếp phục vụ tại khu vực ngồi</span>
+                    </div>
+                    <div class="soluong">
+                        <button id="minussky">-</button>
+                        <input type="number" id="quantitysky" value="0" min="0" max="2">
+                        <button id="increasesky">+</button>
+                    </div>
+                </div> -->
+                <!-- <button id="order">Đặt Vé</button>
+                <div>   . </div> -->
+            </div>
+            <div class="ttve">
+<div>
+                <p id="title">Những thành phố mơ màng</p>
+                <div>
+                <p>15:30 22/12/2025</p>
+                <p>Công viên</p>
+                </div>
+                <div>
+                    <p>Giá vé</p>
+                </div>
+                <div class="price-board">
+                    <h2>Giá vé</h2>
+                
+                    <div class="table">
+                        <div class="row header1">
+                            <div>Hạng vé</div>
+                            <div>Số lượng</div>
+                            <div>Tổng</div>
+                        </div>
+                        <div class="row a" data-type="regular">
+                            <div>Regular Ticket</div>
+                            <div class="qty">
+                                <input type="number"value="0" min="0" max="10" id="quantityregular1"class="allprice">
+                            </div>
+                            <div class="total"><input type="number"value="0" min="0" max="10" id="quantityregular2" class="allprice"></div>
+                        </div>
+                        
+                        <div class="row b" data-type="premium">
+                            <div>Premium Ticket</div>
+                            <div class="qty">                                <input type="number"value="0" min="0" max="10" id="quantitypremium1"class="allprice">
+                            </div>
+                            <div class="total"><input type="number"value="0" min="0" max="10" id="quantitypremium2"class="allprice"></div>
+                        </div>
+                
+                        <div class="row c" data-type="vip">
+                            <div>VIP Ticket</div>
+                            <div class="qty">                                <input type="number"value="0" min="0" max="10" id="quantityvip1"class="allprice">
+                            </div>
+                            <div class="total"><input type="number"value="0" min="0" max="10" id="quantityvip2"class="allprice"></div>
+                        </div>
+                
+                        <div class="row d" data-type="svip">
+                            <div>S-VIP Ticket</div>
+                            <div class="qty">                                <input type="number"value="0" min="0" max="10" id="quantitysvip1"class="allprice">
+                            </div>
+                            <div class="total"><input type="number"value="0" min="0" max="10" id="quantitysvip2"class="allprice"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="method">
+                    <p>Hình thức thanh toán</p>
+                    <div class="logo">
+                        <img src="/images/l1.png">
+                        <img src="/images/l2.png">
+                        <img src="/images/l3.png">
+
+                    </div>
+                    <button id="payment">THANH TOÁN</button>
+
+                </div>
+                
+
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="/js/sitethanhtoan.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,84 @@
+.header 
+{
+    background-color: #ffffffda;
+    position: fixed;
+    /* top: 1px; */
+    width: 100vw;
+    height: 71px;
+    /* border-radius: 60px; */
+    backdrop-filter: blur(1px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    border:2px solid transparent;
+    box-shadow: 0 0 90px rgb(255, 255, 255);
+    backdrop-filter: blur(7px);
+    margin-top:-50px;}
+
+.header .logo {
+    top:3px;
+    width: 200px;
+    transform:translateY(3px);
+    height: 38px;
+}
+
+.content ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+.content ul li a {
+    text-decoration: none;
+    color:#232323;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.content ul li
+{
+    /* box-shadow: 0 0 10px white; */
+    /* border:1px solid rgba(255, 255, 255, 0.425); */
+    padding:13px;
+    /* border-radius: 24px; */
+    background-color:rgba(255, 255, 255, 0);
+    /* backdrop-filter: blur(4px); */
+}
+.content ul li a:hover {
+    color: #41BBD6;
+}
+
+.ticketcuatoi{
+    display:flex;
+    top:10px;
+    align-items: center;
+}.ticketcuatoi img {
+    width: 50px;
+    height: 50px;
+    /* transform:translateY(14px); */
+}
+.ticketcuatoi p
+{
+        font-size:1.2rem;
+}
+#hienmk{
+    cursor: pointer;
+}
+body{
+
+}
+.footer
+{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    /* height:15vw; */
+    top:270px;
+    background:linear-gradient(to right,#97d6aa,#68b9cb,#84d3b0);
+}

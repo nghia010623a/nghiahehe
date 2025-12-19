@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hồ sơ người dùng - TicketPro</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/siteeditprofile.css">
+<!-- Tailwind CSS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3858fa",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1323",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        
+        .dark .glass-panel {
+            background: rgba(15, 19, 35, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-input {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(56, 88, 250, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .glass-input:focus {
+            background: rgba(255, 255, 255, 0.8);
+            border-color: #3858fa;
+            box-shadow: 0 0 0 2px rgba(56, 88, 250, 0.1);
+        }
+        
+        .dark .glass-input {
+            background: rgba(0, 0, 0, 0.2);
+            border-color: rgba(255,255,255,0.1);
+            color: white;
+        }
+        
+        .dark .glass-input:focus {
+            background: rgba(0, 0, 0, 0.4);
+            border-color: #3858fa;
+        }
+
+        .bg-mesh {
+            background-color: #f5f6f8;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(230,88%,60%,0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210,100%,70%,0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(240,100%,80%,0.1) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, hsla(220,100%,70%,0.1) 0px, transparent 50%);
+        }
+        
+        .dark .bg-mesh {
+            background-color: #0f1323;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(230,88%,60%,0.1) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, hsla(210,100%,70%,0.05) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, hsla(240,100%,80%,0.05) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="font-display bg-mesh min-h-screen text-[#0d0f1c] dark:text-white transition-colors duration-300" style="    background: linear-gradient(to right,#A8D2B6,#4EBCD5,#AAC6CC);
+">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <header class="header">
+    <img src="/images/lg.png" alt="Logo" class="logo">
+    <nav class="content">
+        <ul>
+            <li><a href="/html/home.html">Trang chủ</a></li>
+            <li><a href="/html/sitegioithieu.html">Giới thiệu</a></li>
+                    <li><a href="/html/sitetintuc.html">Tin Tức</a></li>
+                    <li><a href="/html/sitesukien.html">Sự Kiện</a></li>
+        </ul>
+    </nav>
+
+    <div class="ticketcuatoi">
+        <!-- <img src="/images/Bag.png" alt="Ticket">
+        <p style="white-space: pre;">Vé của tôi   </p> -->
+        <img src="/images/Profile.png" alt="Ticket" height="12" id="logout">
+        <p style="white-space: pre;"id="lggg">   Username   </p>
+
+
+    </div>
+</header>
+<main class="layout-container px-4 md:px-10 lg:px-40 py-8 max-w-[1440px] mx-auto w-full" style="margin-top:50px">
+<div class="glass-panel rounded-xl p-6 mb-6 flex flex-col md:flex-row items-center md:items-start gap-6 relative overflow-hidden">
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative group">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-32 border-4 border-white dark:border-gray-700 shadow-md" data-alt="Large user avatar profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBED0gLbaB7ztiB1ESPYQtLjJPyDH68Db3PaDmfVe35y9TV9E9VQqmBoyvtaIUJOrbAhR8XgrqTP3VVXlsU525emwCo834pSSCV7GMn1loO83wye4p9UOZmpHSt5vGv3fKxbNo6cM8zyzZacmH1ivXrva6uCj6oWZh2MPi0o4QB7K8rgWb8bb1ltqJPzcOeS-COxxvHaF0fgUZV-roEXcMJLL3tQanTV3ltLZbE7f2B_Q8V-wyU8UGl2wmI_IW8P4Mr3re3mNqNgMQ");'></div>
+<button class="absolute bottom-1 right-1 bg-primary text-white p-2 rounded-full shadow-lg hover:bg-blue-700 transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<div class="flex-1 text-center md:text-left z-10">
+<div class="flex flex-col md:flex-row md:items-center gap-2 mb-2 justify-center md:justify-start">
+<h1 class="text-2xl md:text-3xl font-bold text-[#0d0f1c] dark:text-white" id="user">Nguyễn Văn A</h1>
+<span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded-full border border-yellow-200 w-fit mx-auto md:mx-0 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] fill-1">workspace_premium</span>
+                        Thành viên Vàng
+                    </span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 mb-4">Tham gia từ tháng 8, 2023</p>
+<div class="flex flex-wrap justify-center md:justify-start gap-4">
+<div class="bg-white/50 dark:bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/50 dark:border-gray-700 flex flex-col items-center md:items-start">
+<span class="text-xs text-gray-500 dark:text-gray-400">Sự kiện đã tham gia</span>
+<span class="font-bold text-lg text-primary">12</span>
+</div>
+<div class="bg-white/50 dark:bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/50 dark:border-gray-700 flex flex-col items-center md:items-start">
+<span class="text-xs text-gray-500 dark:text-gray-400">Vé sắp tới</span>
+<span class="font-bold text-lg text-primary">03</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-4 md:mt-0 z-10">
+<button class="bg-white hover:bg-gray-50 text-[#0d0f1c] border border-gray-200 font-medium py-2 px-4 rounded-lg shadow-sm flex items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[20px]">share</span>
+                    Chia sẻ
+                </button>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-6">
+<!-- Side Navigation -->
+<aside class="w-full lg:w-72 flex-shrink-0">
+<div class="glass-panel rounded-xl p-4 sticky top-24">
+<nav class="flex flex-col gap-2">
+<div class="px-3 py-2">
+<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Tài khoản</h3>
+</div>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/10 text-primary font-medium transition-all border border-primary/20" href="#">
+<span class="material-symbols-outlined fill-1">person</span>
+                            Thông tin cá nhân
+                        </a>
+<div class="px-3 py-2 mt-2">
+<h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Hoạt động</h3>
+</div>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-white/40 dark:hover:bg-white/5 transition-all" href="#">
+<span class="material-symbols-outlined">confirmation_number</span>
+                            Lịch sử mua vé
+                        </a>
+
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20 mt-4 transition-all" href="/html/index.html">
+<span class="material-symbols-outlined" id="logout">logout</span>
+                            Đăng xuất
+                        </a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 min-w-0 space-y-6">
+<!-- Personal Info Section -->
+<div class="glass-panel rounded-xl p-6 lg:p-8">
+<div class="flex justify-between items-center mb-6 border-b border-gray-200/50 dark:border-gray-700/50 pb-4">
+<div>
+<h2 class="text-xl font-bold text-[#0d0f1c] dark:text-white">Thông tin cá nhân</h2>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Quản lý thông tin hồ sơ của bạn để bảo mật tài khoản</p>
+</div>
+<button class="text-primary text-sm font-medium hover:underline">Chỉnh sửa</button>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-medium text-[#0d0f1c] dark:text-gray-300">UserName</label>
+<div class="relative">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 material-symbols-outlined text-[20px]">badge</span>
+<input class="glass-input w-full rounded-xl pl-11 pr-4 py-3 outline-none text-[#0d0f1c] dark:text-white" type="text" id="user1"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-medium text-[#0d0f1c] dark:text-gray-300">Password</label>
+<div class="relative">
+<!-- <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 material-symbols-outlined text-[20px]">mail</span> -->
+<input class="glass-input w-full rounded-xl pl-11 pr-4 py-3 outline-none text-[#0d0f1c] dark:text-white" type="password" id="password"/>
+<br>
+<p style="position:absolute;right:20px;top:10px;z-index: 11112;" id="hienmk">👁</p>
+</div>
+</div>
+<div class="space-y-2">
+<div class="space-y-2 md:col-span-2">
+<div class="flex gap-4 mt-1">
+
+</div>
+</div>
+</form>
+<div class="mt-8 pt-6 border-t border-gray-200/50 dark:border-gray-700/50 flex justify-end gap-3">
+<button class="px-6 py-2.5 rounded-xl bg-primary text-white font-medium hover:bg-blue-700 shadow-lg shadow-blue-500/30 transition-all transform hover:-translate-y-0.5" id="luu">Lưu thay đổi</button>
+</div>
+</div>
+<!-- Recent Tickets / Activity Section -->
+<div class="glass-panel rounded-xl p-6 lg:p-8">
+<div class="flex justify-between items-center mb-6">
+<h2 class="text-xl font-bold text-[#0d0f1c] dark:text-white">Vé sắp tới</h2>
+<a class="text-primary text-sm font-medium hover:underline flex items-center gap-1" href="#">
+                            Xem tất cả 
+                            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="space-y-4" id="ls">
+    
+<!-- Ticket Card 1
+<div class="flex flex-col sm:flex-row bg-white/40 dark:bg-white/5 border border-white/60 dark:border-white/10 rounded-xl overflow-hidden hover:shadow-md transition-all group">
+<div class="w-full sm:w-48 h-32 sm:h-auto bg-cover bg-center" data-alt="Concert stage with colorful lights and crowd" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA40jXv7mB60be_Y9nvokrdqVwbbMr_2bBp3VIBs5DCvSCWnsfgzCdjy5B4ec902RwNdqC99Bb9-PpMSKbsw_ro9QrmzW1gbL1WZGCmnNcEGe2AJ1JIZ7sqst9OqiPGq_k3s0uPx8-m732dMw4myMR18Q9K8SUv6LLrifOEVBdHL7YNta3b8-D2IAElmqtk5wqwyURoMjogKKdzI0I00Ay2u6Q8KyINhwsUxETlGCSe7ULQ0Hzu0nD23k2O6xFuMddRnaHEz4GOQUI');">
+<div class="w-full h-full bg-black/30 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-4 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="font-bold text-lg text-[#0d0f1c] dark:text-white mb-1">Summer Vibes Festival 2024</h3>
+<span class="bg-green-100 text-green-700 text-xs font-bold px-2 py-1 rounded-md border border-green-200">Đã thanh toán</span>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                                        Sân vận động Mỹ Đình, Hà Nội
+                                    </p>
+<p class="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                                        20:00 - 15/10/2024
+                                    </p>
+</div>
+</div>
+<div class="p-4 sm:border-l border-gray-200/50 dark:border-gray-700/50 flex sm:flex-col justify-center gap-2 items-center min-w-[140px]">
+<button class="w-full py-2 px-3 bg-primary/10 text-primary hover:bg-primary hover:text-white rounded-lg text-sm font-medium transition-all">Xem vé QR</button>
+<button class="w-full py-2 px-3 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-all">Chi tiết</button>
+</div>
+</div>
+<!-- Ticket Card 2 -->
+<!-- Popup QR -->
+<div id="qrModal" style="display:none"
+ class="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+  <div class="bg-white p-6 rounded-xl w-[300px] text-center relative">
+    <button id="closeQR" class="absolute top-2 right-3 text-xl">✖</button>
+    <h3 class="font-bold mb-3">Mã QR Vé</h3>
+    <div id="qrcode" class="flex justify-center"></div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<script src="/js/siteeditprofile.js">
+
+</script>
+</body></html>
